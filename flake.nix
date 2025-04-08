@@ -123,6 +123,8 @@
               clang-tools
               pyright
               vscode-langservers-extracted
+              tailwindcss-language-server
+              gopls
             ];
             kickstart-debug = [
               delve
@@ -160,7 +162,7 @@
               tokyonight-nvim
               todo-comments-nvim
               mini-nvim
-              kanagawa-nvim
+              everforest
               nvim-treesitter.withAllGrammars
               # This is for if you only want some of the grammars
               # (nvim-treesitter.withPlugins (
