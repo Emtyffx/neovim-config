@@ -3,10 +3,14 @@ return {
     'rebelot/kanagawa.nvim',
     config = function()
       require('kanagawa').setup {
-        compile = false,
+        background = {
+          dark = 'dragon',
+          light = 'lotus',
+        },
         theme = 'dragon',
       }
-      vim.cmd.colorscheme 'kanagawa'
+      vim.cmd 'colorscheme kanagawa'
     end,
+    priority = 1000,
   },
 }

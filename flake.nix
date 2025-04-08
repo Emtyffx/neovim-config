@@ -1,6 +1,5 @@
 # Copyright (c) 2023 BirdeeHub
 # Licensed under the MIT license
-
 # This is an empty nixCats config.
 # you may import this template directly into your nvim folder
 # and then add plugins to categories here,
