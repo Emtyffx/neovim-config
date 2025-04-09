@@ -1,4 +1,3 @@
-print 'oil'
 return {
   {
     'stevearc/oil.nvim',
@@ -18,7 +17,12 @@ return {
 
       { '-', '<cmd>Oil --float<CR>', desc = 'Explorer' },
     },
-    dependencies = { 'echasnovski/mini.icons' },
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
     lazy = false,
+  },
+  {
+    'akinsho/bufferline.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    opts = {},
   },
 }

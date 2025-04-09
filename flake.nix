@@ -125,6 +125,7 @@
               vscode-langservers-extracted
               tailwindcss-language-server
               gopls
+              prettierd
             ];
             kickstart-debug = [
               delve
@@ -155,6 +156,7 @@
               nvim-cmp
               oil-nvim
               mini-icons
+              bufferline-nvim
               luasnip
               cmp_luasnip
               cmp-nvim-lsp
