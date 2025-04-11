@@ -165,6 +165,7 @@
               todo-comments-nvim
               mini-nvim
               everforest
+              nvim-ts-autotag
               nvim-treesitter.withAllGrammars
               # This is for if you only want some of the grammars
               # (nvim-treesitter.withPlugins (
