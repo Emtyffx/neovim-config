@@ -168,6 +168,7 @@
               everforest
               nvim-ts-autotag
               nvim-treesitter.withAllGrammars
+              flash-nvim
               # This is for if you only want some of the grammars
               # (nvim-treesitter.withPlugins (
               #   plugins: with plugins; [
