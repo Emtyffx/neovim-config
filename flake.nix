@@ -126,6 +126,7 @@
               tailwindcss-language-server
               gopls
               prettierd
+              vue-language-server
             ];
             kickstart-debug = [
               delve
