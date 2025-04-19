@@ -120,6 +120,7 @@
               nixd
               stylua
               typescript-language-server
+              vtsls
               clang-tools
               pyright
               vscode-langservers-extracted
@@ -154,6 +155,7 @@
               lazydev-nvim
               fidget-nvim
               conform-nvim
+              obsidian-nvim
               nvim-cmp
               oil-nvim
               mini-icons
@@ -167,6 +169,7 @@
               mini-nvim
               everforest
               nvim-ts-autotag
+              nvim-ts-context-commentstring
               nvim-treesitter.withAllGrammars
               flash-nvim
               # This is for if you only want some of the grammars
@@ -349,7 +352,7 @@
             name = defaultPackageName;
             packages = [ defaultPackage ];
             inputsFrom = [ ];
-            shellHook = '''';
+            shellHook = ''export SHELL=zsh'';
           };
         };
 

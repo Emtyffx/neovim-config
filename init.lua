@@ -170,6 +170,8 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Shiftwidth
+vim.o.shiftwidth = 2
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -658,7 +660,8 @@ require('nixCatsUtils.lazyCat').setup(nixCats.pawsible { 'allPlugins', 'start', 
       --
       -- Some languages (like typescript) have entire language plugins that can be useful: https://github.com/pmizio/typescript-tools.nvim
       -- But for many setups, the LSP (`tsserver`) will work just fine
-      servers.ts_ls = {}
+      -- servers.ts_ls = {}
+      servers.vtsls = {}
       --
 
       -- NOTE: nixCats: nixd is not available on mason.
