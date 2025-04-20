@@ -120,6 +120,7 @@
               nixd
               stylua
               typescript-language-server
+              vtsls
               clang-tools
               pyright
               vscode-langservers-extracted

@@ -660,8 +660,8 @@ require('nixCatsUtils.lazyCat').setup(nixCats.pawsible { 'allPlugins', 'start', 
       --
       -- Some languages (like typescript) have entire language plugins that can be useful: https://github.com/pmizio/typescript-tools.nvim
       -- But for many setups, the LSP (`tsserver`) will work just fine
-      servers.ts_ls = {}
-      -- servers.vtsls = {}
+      -- servers.ts_ls = {}
+      servers.vtsls = {}
       --
 
       -- NOTE: nixCats: nixd is not available on mason.
