@@ -286,7 +286,20 @@ require('nixCatsUtils.lazyCat').setup(nixCats.pawsible { 'allPlugins', 'start', 
   -- "gc" to comment visual regions/lines
   -- NOTE: nixCats: nix downloads it with a different file name.
   -- tell lazy about that.
-  { 'numToStr/Comment.nvim', name = 'comment.nvim', opts = {} },
+  {
+    'numToStr/Comment.nvim',
+    name = 'comment.nvim',
+    dependencies = { 'JoosepAlviste/nvim-ts-context-commentstring' },
+    opts = {
+      toggler = {
+        line = '<leader>c<leader>',
+      },
+      opleader = {
+        block = '<leader>c<leader>',
+      },
+      pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+    },
+  },
 
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
