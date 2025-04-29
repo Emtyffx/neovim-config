@@ -16,6 +16,17 @@ return {
     keys = {
 
       { '-', '<cmd>Oil --float<CR>', desc = 'Explorer' },
+      {
+        '<leader>e',
+        function()
+          vim.ui.input({ prompt = 'Enter path: ' }, function(input)
+            if input and input ~= '' then
+              vim.cmd('Oil ' .. input)
+            end
+          end)
+        end,
+        desc = 'Explorer (path)',
+      },
     },
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     lazy = false,
@@ -23,6 +34,10 @@ return {
   {
     'akinsho/bufferline.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
+    opts = {},
+  },
+  {
+    'sphamba/smear-cursor.nvim',
     opts = {},
   },
 }

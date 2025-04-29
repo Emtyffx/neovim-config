@@ -22,7 +22,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
-
+  
+    plugins-smear-cursor = {
+      flake = false;
+      url = "github:sphamba/smear-cursor.nvim";
+    };
     # neovim-nightly-overlay = {
     #   url = "github:nix-community/neovim-nightly-overlay";
     # };
@@ -171,6 +175,11 @@
               nvim-ts-autotag
               nvim-ts-context-commentstring
               nvim-treesitter.withAllGrammars
+              {
+                plugin = harpoon2;
+                name = "harpoon";
+              }
+              pkgs.neovimPlugins.smear-cursor
               flash-nvim
               # This is for if you only want some of the grammars
               # (nvim-treesitter.withPlugins (

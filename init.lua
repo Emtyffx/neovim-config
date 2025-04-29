@@ -172,6 +172,11 @@ vim.opt.scrolloff = 10
 
 -- Shiftwidth
 vim.o.shiftwidth = 2
+vim.o.softtabstop = 2
+vim.o.smartindent = true
+vim.o.tabstop = 2
+vim.o.expandtab = true
+vim.o.autoindent = true
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -353,6 +358,7 @@ require('nixCatsUtils.lazyCat').setup(nixCats.pawsible { 'allPlugins', 'start', 
         { '<leader>t', group = '[T]oggle' },
         { '<leader>t_', hidden = true },
         { '<leader>w', group = '[W]orkspace' },
+        { '<leader>a', group = '[H]arpoon' },
         { '<leader>w_', hidden = true },
         {
           mode = { 'v' },
