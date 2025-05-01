@@ -22,10 +22,14 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
-  
+
     plugins-smear-cursor = {
       flake = false;
       url = "github:sphamba/smear-cursor.nvim";
+    };
+    plugins-auto-indent-nvim = {
+      flake = false;
+      url = "github:VidocqH/auto-indent.nvim";
     };
     # neovim-nightly-overlay = {
     #   url = "github:nix-community/neovim-nightly-overlay";
@@ -180,7 +184,10 @@
                 name = "harpoon";
               }
               pkgs.neovimPlugins.smear-cursor
+              pkgs.neovimPlugins.auto-indent-nvim
               flash-nvim
+              trouble-nvim
+              vim-fugitive
               # This is for if you only want some of the grammars
               # (nvim-treesitter.withPlugins (
               #   plugins: with plugins; [

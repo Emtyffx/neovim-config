@@ -48,4 +48,28 @@ return {
       },
     },
   },
+  {
+    'vidocqh/auto-indent.nvim',
+    opts = {
+      indentexpr = function(lnum)
+        require('nvim-treesitter.indent').get_indent(lnum)
+      end,
+    },
+  },
+  {
+    'tpope/vim-fugitive',
+    opts = {},
+    keys = {
+      {
+        '<leader>gp',
+        vim.cmd.Git 'push',
+        desc = '[G]it [P]ush',
+      },
+      {
+        '<leader>gP',
+        vim.cmd.Git { 'pull', '--rebase' },
+        desc = '[G]it [P]ush',
+      },
+    },
+  },
 }

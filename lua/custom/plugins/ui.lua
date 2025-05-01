@@ -17,11 +17,11 @@ return {
 
       { '-', '<cmd>Oil --float<CR>', desc = 'Explorer' },
       {
-        '<leader>e',
+        '<leader>-',
         function()
           vim.ui.input({ prompt = 'Enter path: ' }, function(input)
             if input and input ~= '' then
-              vim.cmd('Oil ' .. input)
+              vim.cmd('Oil ' .. input .. ' --float')
             end
           end)
         end,
