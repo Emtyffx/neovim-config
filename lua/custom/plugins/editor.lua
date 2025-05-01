@@ -58,17 +58,42 @@ return {
   },
   {
     'tpope/vim-fugitive',
+    command = 'Git',
     opts = {},
     keys = {
       {
         '<leader>gp',
-        vim.cmd.Git 'push',
+        '<cmd>Git push<cr>',
         desc = '[G]it [P]ush',
       },
       {
         '<leader>gP',
-        vim.cmd.Git { 'pull', '--rebase' },
+        '<cmd>Git pull --rebase<cr>',
         desc = '[G]it [P]ush',
+      },
+      {
+        '<leader>go',
+        ':Git push -u origin ',
+        desc = '[G]it [O]rigin push',
+      },
+      {
+        '<leader>gc',
+
+        function()
+          vim.ui.input({ prompt = 'Enter commit message(empty if no message): ' }, function(input)
+            if input and input ~= '' then
+              vim.cmd('Git commit -m "' .. input .. '"')
+            else
+              vim.cmd 'Git commit'
+            end
+          end)
+        end,
+        desc = '[G]it [C]ommit',
+      },
+      {
+        '<leader>ga',
+        '<cmd>Git add --all<cr>',
+        desc = '[G]it [A]dd All',
       },
     },
   },
