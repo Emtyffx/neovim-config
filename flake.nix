@@ -171,6 +171,7 @@
               luasnip
               cmp_luasnip
               cmp-nvim-lsp
+              indent-blankline-nvim
               cmp-path
               tokyonight-nvim
               todo-comments-nvim
@@ -179,6 +180,8 @@
               nvim-ts-autotag
               nvim-ts-context-commentstring
               nvim-treesitter.withAllGrammars
+              cmp-cmdline
+              yanky-nvim
               {
                 plugin = harpoon2;
                 name = "harpoon";
