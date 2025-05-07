@@ -181,6 +181,7 @@
               nvim-ts-context-commentstring
               nvim-treesitter.withAllGrammars
               cmp-cmdline
+              lualine-nvim
               yanky-nvim
               {
                 plugin = harpoon2;
