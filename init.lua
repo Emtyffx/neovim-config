@@ -682,6 +682,9 @@ require('nixCatsUtils.lazyCat').setup(nixCats.pawsible { 'allPlugins', 'start', 
       -- But for many setups, the LSP (`tsserver`) will work just fine
       -- servers.ts_ls = {}
       servers.vtsls = {}
+
+      -- configure eslint
+      servers.eslint = {}
       --
 
       -- NOTE: nixCats: nixd is not available on mason.
