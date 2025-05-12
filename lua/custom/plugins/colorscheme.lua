@@ -1,9 +1,8 @@
 return {
   {
-    'sainnhe/everforest',
+    'joshdick/onedark.vim',
     config = function()
-      vim.g.everforest_background = 'hard'
-      vim.cmd.colorscheme 'everforest'
+      vim.cmd 'colorscheme onedark'
     end,
   },
 }

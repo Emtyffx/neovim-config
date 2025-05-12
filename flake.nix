@@ -128,7 +128,6 @@
               nixd
               stylua
               typescript-language-server
-              vtsls
               clang-tools
               pyright
               vscode-langservers-extracted
@@ -176,8 +175,9 @@
               tokyonight-nvim
               todo-comments-nvim
               mini-nvim
-              everforest
+              onedark-vim
               nvim-ts-autotag
+              base46
               nvim-ts-context-commentstring
               nvim-treesitter.withAllGrammars
               cmp-cmdline
