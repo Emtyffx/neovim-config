@@ -135,6 +135,7 @@
               gopls
               prettierd
               vue-language-server
+
             ];
             kickstart-debug = [
               delve
